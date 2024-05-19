@@ -1,4 +1,4 @@
-### 6.	Blog layout
+## 6.	Blog layout
 Create a responsive blog layout with a main content area for blog posts and a sidebar for supplementary content, using HTML and CSS.
  
  <img src="https://github.com/Dimitar-Peev/05.HTML-CSS-May-2024/blob/master/02.Introduction-to-HTML-and-CSS-Exercises-Resources/06/screenshot.png">
