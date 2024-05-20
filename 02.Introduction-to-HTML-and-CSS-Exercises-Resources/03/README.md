@@ -1,7 +1,7 @@
 # 3.	Navigation Bar
 Build a simple navigation bar using HTML and CSS that includes links to different sections of a website.
  
- <img src="https://github.com/Dimitar-Peev/05.HTML-CSS-May-2024/blob/master/02.Introduction-to-HTML-and-CSS-Exercises-Resources/04/screenshot.png">
+ <img src="https://github.com/Dimitar-Peev/05.HTML-CSS-May-2024/blob/master/02.Introduction-to-HTML-and-CSS-Exercises-Resources/03/screenshot.png">
  
 ## Requirements:
 **1. HTML Document Setup:**
