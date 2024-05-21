@@ -1,7 +1,7 @@
 # 1.	Box Model - display
 This task aims to provide students with a practical understanding of how the display property affects the rendering of HTML elements, which is crucial for creating well-designed and functional web pages.
  
- <img src="https://github.com/Dimitar-Peev/05.HTML-CSS-May-2024/blob/master/02.Introduction-to-HTML-and-CSS-Exercises-Resources/04/screenshot.png">
+ <img src="https://github.com/Dimitar-Peev/05.HTML-CSS-May-2024/blob/master/03.CSS-Box-Model-and-Typography-Lab-Resources/01/screenshot.png">
  
 <em>For full screenshot check the screenshot.png file in the folder for the task</em>
 ## Objective:
