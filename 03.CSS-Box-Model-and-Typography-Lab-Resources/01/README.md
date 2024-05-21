@@ -1,5 +1,5 @@
 # 1.	Box Model - display
-This task aims to provide students with a practical understanding of how the display property affects the rendering of HTML elements, which is crucial for creating well-designed and functional web pages.
+This task aims to provide students with a practical understanding of how the <b>display</b> property affects the rendering of HTML elements, which is crucial for creating well-designed and functional web pages.
  
  <img src="https://github.com/Dimitar-Peev/05.HTML-CSS-May-2024/blob/master/03.CSS-Box-Model-and-Typography-Lab-Resources/01/screenshot.png">
  
