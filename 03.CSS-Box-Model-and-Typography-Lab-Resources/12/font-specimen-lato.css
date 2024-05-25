@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900;400i;700i&display=swap");
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+}
+
+body {
+    color: #222;
+    padding: 2em;
+}
