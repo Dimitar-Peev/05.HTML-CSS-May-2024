@@ -1,0 +1,31 @@
+.flex-container {
+    display: flex;
+    width: 400px;
+    padding: 1em;
+    border: 2px solid blue;
+    align-items: flex-start;
+    /*flex-wrap: wrap;*/
+}
+
+.flex-container {
+    flex-shrink: 1;
+}
+
+.flex-container.flex-shrink-zero .flex-item{
+    flex-shrink: 0;
+}
+
+.flex-container.flex-shrink-2nd-only .flex-item {
+    flex-shrink: 0;
+}
+
+.flex-container.flex-shrink-2nd-only .flex-item:nth-child(2) {
+    flex-shrink: 1;
+}
+
+.flex-item {
+    background: #eeeeee;
+    padding: 20px;
+    border: 2px solid #000;
+    flex-basis: 400px;
+}
