@@ -1,0 +1,31 @@
+.flex-container {
+    display: flex;
+    width: 400px;
+    height: 200px;
+    padding: 1em;
+    border: 2px solid blue;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.flex-container.align-self-flex-start .flex-item:nth-child(2) {
+    align-self: start;
+}
+
+.flex-container.align-self-center .flex-item:nth-child(2){
+    align-self: center;
+}
+
+.flex-container.align-self-flex-end .flex-item:nth-child(2){
+    align-self: flex-end;
+}
+
+.flex-container.align-self-baseline .flex-item:nth-child(2){
+    align-self: baseline;
+}
+
+.flex-item {
+    background: #eeeeee;
+    padding: 20px;
+    border: 2px solid #000;
+}
