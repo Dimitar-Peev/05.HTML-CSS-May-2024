@@ -5,42 +5,55 @@
 }
 
 body {
-    background: #CCCCCC;
-    padding: 2em;
-    font: 14px/1.5 Lato, sans-serif;
+    background: #EEE;
+    font-family: Lato, sans-serif;
+    padding: 4em 2em;
 }
 
 .container {
-    max-width: 900px;
+    width: 1200px;
     margin: 0 auto;
-    background: #FFFFFF;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
-    border-radius: 0.3em;
 }
 
 .calendar {
     display: flex;
+    border-radius: 0.3em;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.3);
+    outline: 2px solid #fff;
 }
 
-.calendar div {
-    border: 1px solid #CCCCCC;
-    padding: 1em;
-    flex-grow: 1;
+.calendar span {
+    border: 1px solid #CCC;
+    background: #FFF;
+    padding: 2em;
+    flex: 1 1 auto;
     text-align: center;
 }
 
-.calendar .week {
+.calendar section {
     display: flex;
     flex-wrap: wrap;
 }
 
-.calendar .week div:nth-child(1),
-.calendar .week div:nth-child(7) {
+.calendar .week span:nth-of-type(1),
+.calendar .week span:nth-last-of-type(3) {
     flex: 0 0 100%;
 }
 
-.calendar .notes {
-    display: flex;
-    flex-direction: column;
-    white-space: nowrap;
+.calendar .week span:nth-of-type(1) {
+    border-top-left-radius: 0.3em;
+}
+
+.calendar .week span:nth-last-of-type(2) {
+    border-bottom-left-radius: 0.3em;
+}
+
+.calendar .notes span:nth-of-type(1) {
+    border-top-right-radius: 0.3em;
+}
+
+.calendar .notes span:nth-last-of-type(1) {
+    border-bottom-right-radius: 0.3em;
 }
