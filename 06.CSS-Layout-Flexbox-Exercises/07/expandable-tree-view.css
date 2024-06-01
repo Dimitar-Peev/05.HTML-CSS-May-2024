@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+h3 {
+    padding-bottom: 1em;
+}
+
+ul {
+    padding: 0 0 0 0.5em;
+}
+
+ul li {
+    display: flex;
+    list-style: none outside;
+}
+
+ul li li {
+    border-left: 2px solid #CCCCCC;
+}
+
+ul li li::before {
+    display: block;
+    content: "";
+    border: solid #CCCCCC;
+    border-width: 0 0 2px 2px;
+    border-bottom-left-radius: 0.3em;
+    width: 1em;
+    height: 1.3em;
+    margin-right: 0.5em;
+    position: relative;
+    top: -0.5em;
+    left: -2px;
+}
+
+details {
+
+}
+
+details summary {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+details summary::before {
+    width: 1.2em;
+    display: block;
+    content: "+";
+    background: #090;
+    color: #FFFFFF;
+    aspect-ratio: 1/1;
+    line-height: 1;
+    align-content: center;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+
+details[open] > summary::before {
+    content: "-";
+}
+
+li::before + summary {
+    margin-left: -0.5em;
+}
+
+ul li li:last-child {
+    border-left: none;
+    padding-bottom: 2em;
+}
+
+ul ul li:last-child:before {
+    left: 0;
+}
