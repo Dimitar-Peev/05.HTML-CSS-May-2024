@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body, input, textarea, select, option {
+    font: inherit;
+}
+
+body {
+    padding: 2em;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+code {
+    display: block;
+    padding: 0.5em 2em 0.5em 2em;
+    background: #EEEEEE;
+    border-radius: 0.3em;
+    border: 1px solid #CCCCCC;
+    overflow: auto;
+}
+
+input, textarea {
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    border: 2px solid #CCCCCC;
+    border-radius: 0.3em;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 0;
+}
+
+input:focus {
+    border-color: #090;
+}
