@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 12px/1.5 Lato, sans-serif;
+}
+
+body, input, form, select, option, button, textarea {
+    font: inherit;
+}
+
+body {
+    background: #EEEEEE;
+    padding: 2em;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    flex: 0 1 600px;
+    padding: 2em;
+    background: #FFFFFF;
+    border-radius: 0.1em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+.login header {
+    padding-bottom: 4em;
+}
+
+.login input {
+    display: block; /* прави ги едно под друго */
+    width: 100%; /* разширява бутона до края на редът */
+    line-height: 1;
+}
+
+.login .field {
+    display: flex;
+    flex-direction: column;
+    color: #666666;
+    position: relative; /* слагаме тук relative за да можем да използваме top и left във label */
+    margin-bottom: 2em;
+}
+
+.login .field label {
+    order: -1; /* измества текста преди полето */
+    position: absolute;
+    top: 1em;
+    left: 0;
+    /* opacity: 0; */
+    line-height: 1;
+    transition: transform 0.3s ease-in-out;
+    /* opacity 0.3s ease-in; */
+}
+
+.login .field input {
+    border: none;
+    border-bottom: 2px solid #CCCCCC;
+    padding: 1em 0;
+    outline: none;
+}
+
+.login .field input::placeholder {
+    color: transparent;
+}
+
+.login .field input:not(:placeholder-shown) ~ label {
+    /* translate: 0 -1em; */
+    transform: translateY(-1.5em);
+    opacity: 1;
+}
+
+
+.login .field input:focus {
+    border-color: orange;
+}
+
+.login .field input:focus ~ label {
+    color: orange;
+}
+
+.login .field input:required ~ label::after {
+    display: inline-block;
+    content: "*";
+    color: #C00;
+    padding-left: 0.2em;
+}
