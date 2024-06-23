@@ -17,36 +17,19 @@ body, input, button, table {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
-    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 /*
     h1 = 2.8 * 14 = 39.2
     padding-bottom = 0.5 * 39.2 = 19.6
 */
-h1 {
-    font-size: 2.8em;
-}
-
-h2 {
-    font-size: 2.2em;
-}
-
-h3 {
-    font-size: 1.8em;
-}
-
-h4 {
-    font-size: 1.6em;
-}
-
-h5 {
-    font-size: 1.4em;
-}
-
-h6 {
-    font-size: 1.2em;
-}
+h1 { font-size: 2.8em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.6em; }
+h5 { font-size: 1.4em; }
+h6 { font-size: 1.2em; }
 
 /*p, p+ul, ol {*/
 p, ul, ol {
@@ -68,7 +51,7 @@ blockquote {
     margin: 0 2.5em 1.5em 1.5em;
 }
 
-/*blockquote p:last-child*/
+/* blockquote p:last-child  -->   if there is an empty element it will not work */
 blockquote p:last-of-type {
     padding-bottom: 0;
 }
